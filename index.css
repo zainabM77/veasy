@@ -109,11 +109,11 @@ h1, h2, h3, h4 {
 
 /* Overlay hidden on desktop */
 .nav-overlay {
-    display: block !important;
+    display: none;
     position: fixed;
     inset: 0;
-    background: rgba(133, 3, 3, 0.65);
-    z-index: 1400;
+    background: rgba(20, 20, 20, 0.65);
+    z-index: 100;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;

@@ -47,7 +47,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.4
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
 });
 
 faders.forEach((el) => observer.observe(el));
