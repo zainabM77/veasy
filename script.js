@@ -1,10 +1,18 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
-// Mobile menu toggle
 menu.addEventListener('click', function () {
   menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
+  const open = menuLinks.classList.toggle('active');
+  document.body.classList.toggle('menu-open', open);
+});
+
+menuLinks.querySelectorAll('.navbar__links').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('is-active');
+    menuLinks.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
 });
 
 // Fade-in animation

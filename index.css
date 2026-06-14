@@ -997,3 +997,9 @@ h1, h2, h3, h4 {
   }
   .footer-right { gap: 10px; }
 }
+
+body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
