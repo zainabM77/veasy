@@ -2,6 +2,8 @@ const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
 const overlay = document.getElementById('nav-overlay');
+const closeBtn = document.getElementById('menu-close');
+if (closeBtn) closeBtn.addEventListener('click', closeMenu);
 
 let scrollPos = 0;
 
